@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Age calculator app</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .attribution { font-size: 11px; text-align: center; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%);}
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <div class="inputs">
+      <div class="entry">
+        <div class="day d-flex">
+          <label id="day-label" for="">DAY</label>
+          <input type="text" id="day-input" placeholder="DD" />
+          <div id="requiredday" class="required">Thid field is required</div>
+          <div id="valid-day" class="valid-day">Must be a vaild day</div>
+        </div>
+        <div class="month d-flex"">
+          <label id="month-label" for="">Month</label>
+          <input type="text" id="month-input" placeholder="MM" />
+          <div id="requiredmonth" class="required">Thid field is required</div>
+          <div id="valid-month" class="valid-month">Must be a vaild month</div>
+        </div>
+        <div class="year d-flex"">
+          <label id="year-label" for="">Year</label>
+          <input type="text" id="year-input" placeholder="YYYY" />
+          <div id="requiredyear" class="required">Thid field is required</div>
+          <div id="valid-year" class="valid-year">Must be in the past</div>
+        </div>
+      </div>
+      <div class="divider">
+        <span></span>
+        <button id="calculate">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 46 44"><g fill="none" stroke="#FFF" stroke-width="2"><path d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"/></g></svg>
+        </button>
+      </div>
+      <div class="result">
+        <div class="yearresult">
+          <span id="yearresult">--</span>
+          Years
+        </div>
+        <div class="monthresult">
+          <span id="monthresult">--</span>
+          months
+        </div>
+        <div class="dayresult">
+          <span id="dayresult">--</span>
+          days
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://seif-basem.github.io/">Seif Basem</a>.
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
